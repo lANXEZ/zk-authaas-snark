@@ -94,3 +94,7 @@ To run tests with Idemix:
 2. Run bash command to import Hyperledger Fabric crypto libraries: go get github.com/hyperledger/fabric/idemix
 3. Deploy 'verifier_idemix.go' as the verifier with the 'issuer_public_key.bin' and 'revocation_public_key.bin' stored locally on the deployed machine.
 4. 'idemix_proof.bin' is the proof file that will be sent by k6 to the verifier where it will fetch the file and verify.
+
+To run tests with U-Prove(Ming ver.) to Phurich:
+1. "presentation_credential.txt" is the file to be presented to the verifier
+2. 'program.cs' is the script that contains both prover and verifier script. (Potentially you need to call only the specific verifier function)
